@@ -1,0 +1,69 @@
+.occasions {
+  padding: 7rem 5rem;
+  background: var(--green-forest);
+}
+
+.occasions__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.occasions__label {
+  justify-content: center;
+  color: var(--gold-light);
+}
+.occasions__label::before { background: var(--gold-light); }
+
+.occasions__title {
+  color: var(--cream);
+}
+.occasions__title em { color: var(--red-soft); }
+
+.occasions__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(253,245,240,0.06);
+}
+
+.occ-item {
+  background: var(--green-forest);
+  padding: 2.8rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(253,245,240,0.07);
+  transition: background 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.occ-item:hover { background: var(--red-deep); }
+.occ-item:hover .occ-item__icon { transform: scale(1.2) rotate(-5deg); }
+
+.occ-item__icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.occ-item__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--cream);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.occ-item__desc {
+  font-size: 0.77rem;
+  color: rgba(253,245,240,0.5);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .occasions { padding: 4rem 1.5rem; }
+  .occasions__grid { grid-template-columns: repeat(3, 1fr); }
+}

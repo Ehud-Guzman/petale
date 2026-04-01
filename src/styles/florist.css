@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ── Romantic Red + Green Palette ── */
+  --cream:        #fdf5f0;
+  --cream-dark:   #f5e5dc;
+  --warm-white:   #fffaf8;
+
+  --red-deep:     #6e1528;   /* deep rose/burgundy */
+  --red-mid:      #a62840;   /* main brand red     */
+  --red-soft:     #cc5566;   /* lighter accent      */
+  --red-blush:    #f0c4c8;   /* very light tint     */
+
+  --green-forest: #263d22;   /* deep forest green  */
+  --green-mid:    #3e6438;   /* main green         */
+  --green-sage:   #62885c;   /* sage               */
+  --green-light:  #9dba97;   /* pale sage           */
+
+  --dark:         #180c0e;
+  --muted:        #6b5254;
+  --gold:         #b8883a;
+  --gold-light:   #d4aa6a;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ── Shared Utilities ── */
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1.12;
+  color: var(--dark);
+}
+.section-title em {
+  font-style: italic;
+  color: var(--red-mid);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--red-mid);
+  color: #fff;
+  padding: 0.95rem 2.2rem;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover { background: var(--red-deep); transform: translateY(-2px); }
+
+.btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: var(--dark);
+  padding: 0.9rem 2.2rem;
+  border: 1px solid rgba(24,12,14,0.25);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-ghost:hover { border-color: var(--green-mid); color: var(--green-mid); }
+
+/* ── Scroll Fade-Up ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }

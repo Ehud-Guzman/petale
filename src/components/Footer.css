@@ -1,0 +1,97 @@
+.footer {
+  background: var(--dark);
+  padding: 5rem 5rem 2.5rem;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(253,245,240,0.08);
+}
+
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.footer__logo span { color: var(--green-light); }
+
+.footer__tagline {
+  font-size: 0.86rem;
+  line-height: 1.78;
+  color: rgba(253,245,240,0.45);
+  max-width: 240px;
+}
+
+/* Columns */
+.footer__col h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 1.2rem;
+}
+.footer__col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.footer__col li a {
+  font-size: 0.82rem;
+  color: rgba(253,245,240,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-block;
+}
+.footer__col li a:hover { color: var(--gold-light); }
+
+/* Bottom */
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copy { font-size: 0.77rem; color: rgba(253,245,240,0.25); }
+
+.footer__credit {
+  font-size: 0.75rem;
+  color: rgba(253,245,240,0.35);
+}
+.footer__credit a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer__credit a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.footer__socials { display: flex; gap: 0.8rem; }
+.footer__social {
+  width: 34px; height: 34px;
+  border: 1px solid rgba(253,245,240,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(253,245,240,0.4);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.footer__social:hover { border-color: var(--red-soft); color: var(--red-soft); }
+
+@media (max-width: 900px) {
+  .footer { padding: 3.5rem 1.5rem 2rem; }
+  .footer__top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer__credit { order: 2; }
+  .footer__socials { order: 3; }
+}

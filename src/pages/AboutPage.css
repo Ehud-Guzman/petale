@@ -1,0 +1,210 @@
+/* ── Hero ── */
+.about-page__hero {
+  position: relative;
+  height: 75vh;
+  min-height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-page__hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: saturate(0.8);
+}
+
+.about-page__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(24, 12, 14, 0.75) 0%,
+    rgba(24, 12, 14, 0.2) 60%,
+    transparent 100%
+  );
+}
+
+.about-page__hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 0 5rem 4rem;
+  max-width: 700px;
+}
+
+.about-page__hero-inner .section-label { color: var(--gold-light); }
+.about-page__hero-inner .section-label::before { background: var(--gold-light); }
+
+.about-page__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.08;
+  margin: 0.5rem 0 1.2rem;
+}
+.about-page__title em { font-style: italic; color: var(--red-soft); }
+
+.about-page__sub {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.7);
+  max-width: 500px;
+}
+
+/* ── Story ── */
+.about-page__story {
+  padding: 7rem 5rem;
+  background: var(--cream);
+}
+
+.about-page__story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.about-page__story-left p {
+  font-size: 0.97rem;
+  line-height: 1.88;
+  color: var(--muted);
+  margin-top: 1.2rem;
+}
+
+/* Timeline */
+.about-page__timeline { padding-top: 0.5rem; }
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 60px 24px 1fr;
+  align-items: start;
+  gap: 0.8rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(24,12,14,0.07);
+}
+.timeline-item:last-child { border-bottom: none; }
+
+.timeline-item__year {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--red-mid);
+  padding-top: 2px;
+}
+
+.timeline-item__line {
+  width: 1px;
+  background: var(--green-mid);
+  margin: 6px auto 0;
+  height: 100%;
+  min-height: 40px;
+}
+
+.timeline-item__text {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  padding-top: 4px;
+}
+
+/* ── Values ── */
+.about-page__values {
+  padding: 7rem 5rem;
+  background: var(--warm-white);
+}
+
+.about-page__values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.value-card {
+  background: var(--cream);
+  padding: 2.2rem 1.8rem;
+  border-top: 3px solid var(--red-mid);
+  transition: transform 0.3s;
+}
+.value-card:hover { transform: translateY(-4px); }
+
+.value-card__icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.value-card__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 0.6rem;
+}
+.value-card__desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── Team ── */
+.about-page__team {
+  padding: 7rem 5rem;
+  background: var(--cream);
+}
+
+.about-page__team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-card {
+  background: var(--warm-white);
+  padding: 2.8rem 2rem;
+  text-align: center;
+  border-bottom: 3px solid var(--green-mid);
+  transition: transform 0.3s;
+}
+.team-card:hover { transform: translateY(-4px); }
+
+.team-card__avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.4rem;
+}
+.team-card__name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+}
+.team-card__role {
+  font-size: 0.77rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red-mid);
+  margin-bottom: 1rem;
+}
+.team-card__bio {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .about-page__hero-inner { padding: 0 1.5rem 3rem; }
+  .about-page__story { padding: 4rem 1.5rem; }
+  .about-page__story-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .about-page__values { padding: 4rem 1.5rem; }
+  .about-page__values-grid { grid-template-columns: 1fr 1fr; }
+  .about-page__team { padding: 4rem 1.5rem; }
+  .about-page__team-grid { grid-template-columns: 1fr; }
+}

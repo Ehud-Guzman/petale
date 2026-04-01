@@ -1,0 +1,42 @@
+.wa-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.3rem 0.75rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.35);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: transform 0.25s, box-shadow 0.25s;
+  animation: wa-pulse 3s ease-in-out infinite;
+}
+.wa-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(37, 211, 102, 0.45);
+}
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.35); }
+  50%       { box-shadow: 0 6px 40px rgba(37,211,102,0.55); }
+}
+
+.wa-btn__icon {
+  width: 22px; height: 22px;
+  flex-shrink: 0;
+}
+
+.wa-btn__label { white-space: nowrap; }
+
+@media (max-width: 600px) {
+  .wa-btn { padding: 0.85rem; border-radius: 50%; }
+  .wa-btn__label { display: none; }
+}
