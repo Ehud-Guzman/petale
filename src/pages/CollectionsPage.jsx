@@ -13,7 +13,7 @@ const products = [
     name: "La Belle Bloom",
     desc: "Lush red roses, peonies and eucalyptus in a muted linen wrap.",
     price: "KSh 3,500",
-    img: "/rose.webp",
+    img: "./rose.webp",
   },
   {
     category: "Gift Boxes",
