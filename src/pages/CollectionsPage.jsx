@@ -21,7 +21,7 @@ const products = [
     name: "Petals & Luxe Box",
     desc: "Seasonal blooms, artisan candle and handwritten card in a keepsake box.",
     price: "KSh 5,200",
-    img: "/images/labele.png",
+    img: "./images/labele.png",
   },
   {
     category: "Subscriptions",
@@ -29,7 +29,7 @@ const products = [
     name: "Bloom Club",
     desc: "Fresh seasonal arrangements delivered every month. Cancel anytime.",
     price: "KSh 2,800/mo",
-    img: "/images/Pink-Roses-For-Her-2_E9A3238.webp",
+    img: "./images/Pink-Roses-For-Her-2_E9A3238.webp",
   },
   {
     category: "Arrangements",
@@ -37,7 +37,7 @@ const products = [
     name: "Crimson Dusk",
     desc: "Deep red dahlias and garden roses, wrapped in Italian kraft paper.",
     price: "KSh 4,200",
-    img: "/images/dahlia-decorative-garden-wonder.jpg",
+    img: "./images/dahlia-decorative-garden-wonder.jpg",
   },
   {
     category: "Wedding",
@@ -45,7 +45,7 @@ const products = [
     name: "The Bridal Suite",
     desc: "Full consultation and bespoke bridal florals for your wedding day.",
     price: "KSh 45,000",
-    img: "/images/Blossom-Veil-1_E9A3046-scaled_1.webp",
+    img: "./images/Blossom-Veil-1_E9A3046-scaled_1.webp",
   },
   {
     category: "Gift Boxes",
@@ -53,7 +53,7 @@ const products = [
     name: "Amore Gift Set",
     desc: "A romantic curated box — roses, chocolates and a personalised card.",
     price: "KSh 6,500",
-    img: "/images/carnation-and-roses.jpg",
+    img: "./images/carnation-and-roses.jpg",
   },
   {
     category: "Corporate",
@@ -61,7 +61,7 @@ const products = [
     name: "Weekly Office Blooms",
     desc: "Keep your workspace beautiful. Weekly arrangements on a rolling contract.",
     price: "KSh 8,000/mo",
-    img: "/images/beautidul-vase-bouquet-img-600x600.jpg",
+    img: "./images/beautidul-vase-bouquet-img-600x600.jpg",
   },
   {
     category: "Arrangements",
@@ -69,7 +69,7 @@ const products = [
     name: "Gentle Farewell",
     desc: "Dignified white and soft green arrangement for moments of remembrance.",
     price: "KSh 4,800",
-    img: "/images/farewell-flower-arrangement_orig.jpg",
+    img: "./images/farewell-flower-arrangement_orig.jpg",
   },
   {
     category: "Subscriptions",
@@ -77,7 +77,7 @@ const products = [
     name: "Seasonal Gift Box",
     desc: "A curated gift box delivered once per quarter — always a surprise.",
     price: "KSh 9,500/qtr",
-    img: "/images/ADazzlingNight-687.jpg",
+    img: "./images/ADazzlingNight-687.jpg",
   },
 ];
 

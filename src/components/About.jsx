@@ -26,12 +26,12 @@ export default function About() {
         <div className="about__images fade-up">
           <img
             className="about__img-main"
-            src="/images/carnation-and-roses.jpg"
+            src="./images/carnation-and-roses.jpg"
             alt="Florist at work"
           />
           <img
             className="about__img-accent"
-            src="/images/petals.jpg"
+            src="./images/petals.jpg"
             alt="Flowers detail"
           />
           <div className="about__stat-badge">

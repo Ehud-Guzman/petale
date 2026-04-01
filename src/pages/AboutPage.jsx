@@ -86,7 +86,7 @@ export default function AboutPage() {
         </div>
         <img
           className="about-page__hero-img"
-          src="/images/unnamed.jpg"
+          src="./images/unnamed.jpg"
           alt="Our studio"
         />
         <div className="about-page__hero-overlay" />
